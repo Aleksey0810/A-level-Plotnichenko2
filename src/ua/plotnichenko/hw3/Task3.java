@@ -1,4 +1,4 @@
-package ua.Plotnichenko.hw3;
+package ua.plotnichenko.hw3;
 
 import java.util.Scanner;
 
