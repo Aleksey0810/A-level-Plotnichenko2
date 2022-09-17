@@ -7,7 +7,6 @@ public class Task4 {
         int third = 33;
         printMinAbsValue(first, second, third);
     }
-
     private static void printMinAbsValue(int first, int second, int third) {
         int firstAbs = first > 0 ? first : -first;
         int secondAbs = second > 0 ? second : -second;
@@ -27,13 +26,3 @@ public class Task4 {
     return min;
 }
 }
-
-
-
-
-
-
-
-
-
-

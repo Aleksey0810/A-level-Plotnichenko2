@@ -6,24 +6,21 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Task4 {
     public static void main(String[] args) {
         int mass[] = new int[2000];
-        fillMass(mass,1,10);
-        changeOnZero(mass);
-    }
-    public static void fillMass(int[] mass, int min, int max) {
         for (int i = 0; i < mass.length; i++) {
-            mass[i] = ThreadLocalRandom.current().nextInt(min, max);
+            mass[i] = (int) (1 + Math.random() * 100);
         }
+        System.out.println("Original");
         System.out.println(Arrays.toString(mass));
+        System.out.println("with nullified evens");
+        System.out.println(Arrays.toString(nullAllEvens(mass)));
     }
-    public static void changeOnZero (int mass[]){
-
-        for (int i = 0; i < mass.length; i ++) {
-            if (mass[i] % 2 == 0) {
-                mass[i] = 0;
+    static int[] nullAllEvens(int[] arr) {
+        int[] nullified = Arrays.copyOf(arr, arr.length);
+        for (int i = 0; i < nullified.length; i++) {
+            if (nullified[i] % 2 == 0) {
+                nullified[i] = 0;
             }
         }
-        System.out.println(Arrays.toString(mass));
-
+        return nullified;
     }
-
 }
