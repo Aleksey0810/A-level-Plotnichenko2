@@ -14,6 +14,7 @@ public class Task4 {
         System.out.println("with nullified evens");
         System.out.println(Arrays.toString(nullAllEvens(mass)));
     }
+
     static int[] nullAllEvens(int[] arr) {
         int[] nullified = Arrays.copyOf(arr, arr.length);
         for (int i = 0; i < nullified.length; i++) {
