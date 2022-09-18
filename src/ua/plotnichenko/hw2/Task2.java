@@ -1,4 +1,4 @@
-package ua.Plotnichenko.hw2;
+package ua.plotnichenko.hw2;
 
 import java.awt.*;
 
