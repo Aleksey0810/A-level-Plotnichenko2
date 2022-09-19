@@ -6,8 +6,13 @@ public class Task1 {
     public static void main(String[] args) {
         int[][] array = new int[4][4];
         fillArray(array);
-        System.out.println();
+        printArray(array);
+    }
 
+    public static void printArray(int[][] array) {
+        for (int[] ints : array) {
+            System.out.println(Arrays.toString(ints));
+        }
     }
 
     public static void fillArray(int[][] array) {
@@ -20,9 +25,6 @@ public class Task1 {
                     array[i][j] = -1 * array[i][j];
                 }
             }
-            System.out.println();
-            System.out.print(Arrays.toString(array[i]));
-
         }
     }
 }
