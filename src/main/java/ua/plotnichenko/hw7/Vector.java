@@ -1,4 +1,4 @@
-package ua.plotnichenko.hw7;
+package main.java.ua.plotnichenko.hw7;
 
 public class Vector {
     double x;
@@ -11,7 +11,7 @@ public class Vector {
         this.z = z;
     }
 
-    public double vectorLenghth() {
+    public double vectorLength() {
         return Math.sqrt(x * x + y * y + z * z);
     }
 
@@ -27,7 +27,7 @@ public class Vector {
     }
 
     public double cos(Vector vector) {
-        return scalarProduct(vector) / vector.vectorLenghth() * vector.vectorLenghth();
+        return scalarProduct(vector) / (vector.vectorLength() * vector.vectorLength());
     }
 
     public Vector add(Vector vector) {
